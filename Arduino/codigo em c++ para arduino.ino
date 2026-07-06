@@ -106,7 +106,7 @@ void processarConfiguracao(char comando) {
       break;
     case 'D':
       configurando = false;
-      
+     
       digitalWrite(PIN_LED_AMARELO, HIGH);
       tone(PIN_BUZZER, 1500, 300);
       delay(300);
@@ -119,7 +119,7 @@ void processarConfiguracao(char comando) {
       Serial.println(F("Configuracao aceita. Modo texto ativado."));
       break;
     default:
-      
+     
       digitalWrite(PIN_LED_VERMELHO, HIGH);
       tone(PIN_BUZZER, 400, 150);
       delay(150);
@@ -131,30 +131,30 @@ void processarConfiguracao(char comando) {
 void processarCifragem(String entrada) {
   entrada.toUpperCase();
   String palavraCifrada = "";
-  
+ 
   for (unsigned int i = 0; i < entrada.length(); i++) {
     char caracterAtual = entrada.charAt(i);
-    
+   
     if (caracterAtual >= 'A' && caracterAtual <= 'Z') {
-      
+     
       digitalWrite(PIN_LED_VERDE, HIGH);
       tone(PIN_BUZZER, 1000, 50);
-      
+     
       palavraCifrada += cifrarLetra(caracterAtual);
-      
-      delay(50); 
+     
+      delay(50);
       digitalWrite(PIN_LED_VERDE, LOW);
     } else if (caracterAtual == ' ') {
       palavraCifrada += ' ';
     }
   }
-  
+ 
   lcd.clear();
   lcd.setCursor(0, 0);
-  lcd.print(entrada.substring(0, 16));   
+  lcd.print(entrada.substring(0, 16));  
   lcd.setCursor(0, 1);
-  lcd.print(palavraCifrada.substring(0, 16)); 
-  
+  lcd.print(palavraCifrada.substring(0, 16));
+ 
   Serial.print(F("Original:      "));
   Serial.println(entrada);
   Serial.print(F("Criptografado: "));
@@ -168,23 +168,23 @@ void processarCifragem(String entrada) {
 
 void setup() {
   Serial.begin(9600);
-  
+ 
   pinMode(PIN_LED_VERMELHO, OUTPUT);
   pinMode(PIN_LED_AMARELO, OUTPUT);
   pinMode(PIN_LED_VERDE, OUTPUT);
   pinMode(PIN_BUZZER, OUTPUT);
-  
+ 
   lcd.init();
   lcd.backlight();
   lcd.setCursor(0, 0);
   lcd.print("ENIGMA - TFI");
   lcd.setCursor(0, 1);
   lcd.print("3 rotores I-II-III");
-  
+ 
   tone(PIN_BUZZER, 1200, 100);
   delay(100);
   tone(PIN_BUZZER, 1800, 100);
-  
+ 
   delay(1800);
   mostrarMenuConfiguracao();
 }
@@ -193,7 +193,7 @@ void loop() {
   if (Serial.available() > 0) {
     String entrada = Serial.readStringUntil('\n');
     entrada.trim();
-    
+   
     if (entrada.length() > 0) {
       if (configurando) {
         entrada.toUpperCase();
