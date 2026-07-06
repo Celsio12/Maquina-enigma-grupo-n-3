@@ -48,7 +48,7 @@ Certifique-se de ter o **JDK (Java Development Kit)** instalado em sua máquina.
 git clone https://github.com/Celsio12/Maquina-enigma-grupo-n-3.git
 ```
 
-**2. Aceda à pasta do projeto:**
+**2. Aceda à pasta do projecto:**
 ```bash
 cd Maquina-enigma-grupo-n-3/src
 ```
@@ -91,7 +91,3 @@ O protótipo físico replica a mesma lógica de cifragem em C/C++, utilizando um
 ---
 
 Desenvolvido como projecto académico para a unidade curricular de Matemática Discreta & Lógica.
-
-
-
-
