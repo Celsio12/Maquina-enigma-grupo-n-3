@@ -81,9 +81,9 @@ Ao inserir `KCHWF ZAMVR` com a **mesma configuração**, o resultado será `HELL
 
 ## Integrantes do Grupo N° 3
 
-* **Célsio [Sobrenome]** 
+* **Amélia kalende** 
 * **Célsio Gaspar** 
-* **[Nome do Integrante 3]** 
+* **Lycia Paulo** 
 * 
 
 ---
