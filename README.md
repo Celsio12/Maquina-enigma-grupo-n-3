@@ -1,8 +1,8 @@
 # Máquina Enigma — Grupo Nº 3
 
-Este projeto é uma implementação funcional da famosa **Máquina Enigma**, o dispositivo eletromecânico de criptografia utilizado para proteger comunicações comerciais e militares durante a primeira metade do século XX, alcançando maior notoriedade durante a Segunda Guerra Mundial.
+Este projecto é uma implementação funcional da famosa **Máquina Enigma**, o dispositivo eletromecânico de criptografia utilizado para proteger comunicações comerciais e militares durante a primeira metade do século XX, alcançando maior notoriedade durante a Segunda Guerra Mundial.
 
-O objetivo deste projeto é simular com precisão o comportamento mecânico e lógico da máquina, permitindo tanto a cifragem quanto a decifragem de mensagens textuais, através de um simulador em Java e de um protótipo físico em Arduino.
+O objectivo deste projecto é simular com precisão o comportamento mecânico e lógico da máquina, permitindo tanto a cifragem quanto a decifragem de mensagens textuais, através de um simulador em Java e de um protótipo físico em Arduino.
 
 ---
 
@@ -23,7 +23,7 @@ O objetivo deste projeto é simular com precisão o comportamento mecânico e l�
 
 ---
 
-## Estrutura do Projeto
+## Estrutura do Projecto
 
 A lógica do sistema está dividida nos seguintes módulos principais:
 
@@ -36,7 +36,7 @@ A lógica do sistema está dividida nos seguintes módulos principais:
 
 ---
 
-## Como Executar o Projeto
+## Como Executar o Projecto
 
 ### Pré-requisitos
 Certifique-se de ter o **JDK (Java Development Kit)** instalado em sua máquina.
@@ -90,7 +90,7 @@ O protótipo físico replica a mesma lógica de cifragem em C/C++, utilizando um
 
 ---
 
-Desenvolvido como projeto académico para a unidade curricular de Matemática Discreta & Lógica.
+Desenvolvido como projecto académico para a unidade curricular de Matemática Discreta & Lógica.
 
 
 
