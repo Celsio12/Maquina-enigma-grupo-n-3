@@ -19,8 +19,8 @@ O objetivo deste projeto é simular com precisão o comportamento mecânico e l�
 
 ##  Tecnologias Utilizadas
 
-* **Linguagem Principal:** [Java, C++]
-* **Interface:** [Arduino]
+* **Linguagem Principal:** Java, C++
+* **Interface:** Arduino
 
 ---
 
